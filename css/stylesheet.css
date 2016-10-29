@@ -576,10 +576,12 @@ button {
   height: auto;
   background-color: #fff;
   list-style-type: none;
+  opacity:.2;
 }
 /* 2 */
 .containerphone {
     margin-right: 8px;
+    opacity: 0.5;
   }
 
   /* 2.5 */
@@ -705,7 +707,7 @@ display:table}
   display:inline-block}
 
 /* 14 */
-.landingpage.landingphone {
+.opening.banner {
    
     height: 310px;
     margin-top: 0px;
@@ -771,10 +773,7 @@ display:table}
 }
 
 
-.slider {
-  height: 650px;
-  margin-bottom: 38px;
-}
+
 
 .portfolio {
   display: block;
@@ -785,14 +784,8 @@ display:table}
   padding-top: 0px;
 }
 
-.navslider {
-  margin-bottom: -50px;
-  padding-bottom: 0px;
-  font-size: 12px;
-  list-style-type: square;
-}
 
-.worksection {
+.About.section {
   height: 900px;
   padding-top: 0px;
 }
@@ -823,6 +816,11 @@ display:table}
    Start of things I do need to seee
    ========================================================================== */
 
+.scrollfooter {
+  padding: 100px;
+  display: center;
+  width: 15%;
+}
 
 .portrait {
   width: 16%;
