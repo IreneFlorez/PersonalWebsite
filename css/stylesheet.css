@@ -10,7 +10,7 @@ html {
 }
 
 /* ==========================================================================
-   Basic Foundation CSS from Foundation 6  
+   Basic foundation CSS from Foundation 6  
    ========================================================================== */
 
 body {
@@ -688,6 +688,11 @@ display:table}
   background-image: url("http://www.custompc.ie/ekmps/shops/pctech/resources/Design/flickrgrey.png");
   background-size: contain;
 }
+
+.linkicon.githubicon {
+  background-image: url("http://www.iconsdb.com/icons/preview/gray/github-10-xxl.png");
+  background-size: contain;}
+
 .linkicon.sociallink:hover {
   -webkit-transform: scale(1.25);
   -ms-transform: scale(1.25);

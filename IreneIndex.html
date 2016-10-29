@@ -14,28 +14,47 @@
     <script async src="//www.google-analytics.com/analytics.js"></script>
     <script src="https://www.google-analytics.com/ga.js"></script>
     -->
+<script type="text/javascript">
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        console.log(target);
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top,
+                easing: 'linear'
+            }, 3000);
+        }
+    });
+  </script>
   </head>
   <body data-gr-c-s-loaded="true">
     <div class="navbar">
         <div class="containerphone">
-          <a class="w-clearfix w-nav-brand" href="#ExperienceResume">
-          <h5 class="navlink01 navlink01phone" id=TopLanding">Irene&nbsp;Florez / Resume</h5></a>
+          <a class="w-clearfix w-nav-brand" href="#AboutMeparagraphcentered">
+          <h5 class="navlink01 navlink01phone" id=TopLanding">Irene&nbsp;Florez / Resume
+          </h5>
+          </a>
 <!-- #7,8 -->
                   <div class="iconsphone w-row">
                     <div class="w-clearfix">
-
 <!-- #10,11+ -->
-                      <a class="emailicon linkicon sociallink w-inline-block" href="mailto:Irene@www.Ireneflorez.com?subject=Hola%20from%20the%20web!"></a>
+                      <a class="emailicon linkicon sociallink w-inline-block" href="mailto:Irene@www.Ireneflorez.com?subject=Hola%20from%20the%20web!">
+                      </a>
                     </div>
                     <div class="w-clearfix">
-                      <a class="linkinicon linkicon sociallink w-inline-block" href="https://www.linkedin.com/in/ireneflorez" target="_blank"></a>
+                      <a class="linkinicon linkicon sociallink w-inline-block" href="https://www.linkedin.com/in/ireneflorez" target="_blank">
+                      </a>
                     </div>
                    <div class="w-clearfix">
                     <a class="twittericon linkicon sociallink w-inline-block" href="http://www.twitter.com/IreneFlorez" target="_blank"></a>
                    </div>
-                  
                     <div class="w-clearfix">
-                    <a class="flickricon linkicon sociallink w-inline-block" href="https://www.flickr.com/photos/ireneflorez/" target="_blank"></a>
+                    <a class="flickricon linkicon sociallink w-inline-block" href="https://www.flickr.com/photos/ireneflorez/" target="_blank">
+                    </a>
+                  </div>
+                  <div class="w-clearfix">
+                    <a class="githubicon linkicon sociallink w-inline-block" href="https://github.com/IreneFlorez" target="_blank"></a>
                   </div>
           </div>
         </div>
@@ -54,14 +73,12 @@
     </div>
        
 
-
+     <!--  -->
         <div class="worksection worksectionphone" id="Projects">
           <div class="portfolio w-container">
 <!-- Space Takers basically -->
-            <div class="slider sliderphonelandscape w-slider" data-animation="cross" data-duration="400" data-nav-spacing="5">
-              <div class="slider sliderphonelandscape w-slider-mask">
-                <div class="slide00 slide00mobile slide01 slide01mobile w-slide" style="transform: translateX(0px); opacity: 1;">
-                </div>
+           
+               
 <!-- end of space takers -->
 
 
@@ -113,8 +130,14 @@
                 </div>
               </div>
             </div>
-          </div>
+
+        <div>
+
+        <a href="#top" id="scroll up"><img src="http://storage.googleapis.com/instapage-user-media/6b67dd96/8219698-0-Circled-Chevron-Up.png"></a>
         </div>
+
+
+
   </body>
 </html>
 
