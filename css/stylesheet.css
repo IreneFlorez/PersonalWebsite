@@ -340,7 +340,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #0a0a0a;
+  /* color: #0a0a0a;*/
+  color:#595959;
   background: #fefefe;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -574,15 +575,16 @@ button {
   right: 0px;
   display: block;
   height: auto;
-  background-color: #fff;
+  /* background-color: #fff; */
   list-style-type: none;
-  opacity:.2;
+  opacity:none;
 }
 /* 2 */
 .containerphone {
     margin-right: 8px;
-    opacity: 0.5;
+    opacity: none;
   }
+
 
   /* 2.5 */
 .w-clearfix:before,
@@ -599,30 +601,72 @@ button {
 /*this is the resume at top*/ 
 .navlink01.navlink01phone {
   position: static;
-  float:left;
-  left: 0px;
+  float:right;
+  left: 3px;
   right: 0px;
   bottom: 0px;
-  margin-top: 0px;
+  width:100px;
+  display:inline-block;
+  max-width: 100%;
+  margin-top: 5px;
+  margin-right: 0px;
   padding-top: 5px;
   margin-left: 45px
+  height: 5px;
 }
 
 .navlink01 {
   display: inline-block;
   width: 161px;
   height: 75px;
-  margin-top: .5px;
-  margin-bottom: 1px;
+  margin-top: 5px;
+  margin-bottom: 0px;
   margin-left: 0px;
   padding-top: 49px;
-  padding-bottom: 19px;
+  padding-bottom: 0px;
   padding-right: 49px;
   float: right;
   font-family: 'Open Sans', sans-serif;
   color: #595959;
   font-size: 15px;
   font-weight: 400;
+  height: 5px;
+}
+
+.navlink02.navlink02phone {
+  position: static;
+  float:right;
+  left: 3px;
+  right: 0px;
+  bottom: 0px;
+  width:100px;
+  display:inline-block;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 35px
+  margin-right: 0px;
+  margin-left: 45px
+  padding-top: 0px;
+  padding-bottom: 25px
+  padding-right: 49px;
+  height: 5px;
+}
+
+.navlink02 {
+  display: inline-block;
+  width: 161px;
+  margin-top: 0px;
+  margin-bottom: 35px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 25px;
+  padding-right: 49px;
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+  color: #595959;
+  font-size: 15px;
+  font-weight: 400;
+  height: 5px;
 }
 
 /* 6 */
@@ -633,10 +677,12 @@ button {
 
  /* 7 */
 .iconsphone {
-  margin-right: 3px;
-  width: 10%;
-  position: absolute;
-  float: none;  
+  /*margin-right: 3px;*/
+  margin-left 3px;
+  width: 9%;
+ /*position: absolute;*/ 
+ /* float: none;  */
+ float: right;
 }
 
 /* 8 */
@@ -695,6 +741,10 @@ display:table}
   background-image: url("http://www.iconsdb.com/icons/preview/gray/github-10-xxl.png");
   background-size: contain;}
 
+  .linkicon.scrollupicon {
+  background-image: url("http://storage.googleapis.com/instapage-user-media/6b67dd96/8219698-0-Circled-Chevron-Up.png");
+  background-size: contain;}
+
 .linkicon.sociallink:hover {
   -webkit-transform: scale(1.25);
   -ms-transform: scale(1.25);
@@ -747,12 +797,9 @@ display:table}
 
 
 
-
-
-/* ==========================================================================
-   Start of things I don't need to seee
-   ========================================================================== */
-
+.headings {
+   color: #595959;
+}
 
 
 
@@ -778,7 +825,7 @@ display:table}
 .portfolio {
   display: block;
   width: auto;
-  height: 650px;
+  height: auto;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 0px;
@@ -786,8 +833,8 @@ display:table}
 
 
 .About.section {
-  height: 900px;
-  padding-top: 0px;
+  height: 450px;
+  padding-top: 150px;
 }
 
 .portfoliobtn {
@@ -837,6 +884,7 @@ display:table}
   padding-right: 10px;
   margin-right: 10px;
   margin-top: 19px;
+  color: #595959;
 
 }
 
