@@ -335,7 +335,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  padding: 0;
+  padding-left: 2em;
+  padding-right: 5em;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
@@ -565,7 +566,7 @@ button {
 
 
 /* ==========================================================================
-   Start of classes  
+   Start of selected classes referenced directly in the HTML 
    ========================================================================== */
 /* 1 */
 .navbar {
@@ -575,6 +576,7 @@ button {
   right: 0px;
   display: block;
   height: auto;
+  line-height: .5;
   /* background-color: #fff; */
   list-style-type: none;
   opacity:none;
@@ -583,6 +585,7 @@ button {
 .containerphone {
     margin-right: 8px;
     opacity: none;
+    max-height: 2px;
   }
 
 
@@ -600,37 +603,21 @@ button {
 /* 5 */
 /*this is the resume at top*/ 
 .navlink01.navlink01phone {
-  position: static;
-  float:right;
-  left: 3px;
-  right: 0px;
-  bottom: 0px;
-  width:100px;
-  display:inline-block;
-  max-width: 100%;
-  margin-top: 5px;
-  margin-right: 0px;
-  padding-top: 5px;
-  margin-left: 45px
-  height: 5px;
+  padding-top: 10px;
+  margin-left: 45px;
+  height: 3px;
+  margin-bottom: 12px;
 }
 
 .navlink01 {
-  display: inline-block;
-  width: 161px;
-  height: 75px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  padding-top: 49px;
-  padding-bottom: 0px;
-  padding-right: 49px;
+  margin-bottom: 12px;
+  width: 100px;
   float: right;
   font-family: 'Open Sans', sans-serif;
   color: #595959;
   font-size: 15px;
   font-weight: 400;
-  height: 5px;
+  height: 3px;
 }
 
 .navlink02.navlink02phone {
@@ -647,26 +634,26 @@ button {
   margin-right: 0px;
   margin-left: 45px
   padding-top: 0px;
-  padding-bottom: 25px
+  padding-bottom: 0px
   padding-right: 49px;
-  height: 5px;
+  height: 3px;
 }
 
 .navlink02 {
   display: inline-block;
-  width: 161px;
+  width: 100px;
   margin-top: 0px;
   margin-bottom: 35px;
   margin-left: 0px;
   padding-top: 0px;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   padding-right: 49px;
   float: right;
   font-family: 'Open Sans', sans-serif;
   color: #595959;
   font-size: 15px;
   font-weight: 400;
-  height: 5px;
+  height: 3px;
 }
 
 /* 6 */
@@ -728,7 +715,7 @@ display:table}
 }
 
 .linkicon.twittericon {
-  background-image: url("http://bahiacharters.com/wp-content/uploads/2014/10/TWITTER-ICON.png");
+  background-image: url("../images/twitter.png");
   background-size: contain;
 }
 
@@ -741,8 +728,12 @@ display:table}
   background-image: url("http://www.iconsdb.com/icons/preview/gray/github-10-xxl.png");
   background-size: contain;}
 
-  .linkicon.scrollupicon {
+.linkicon.scrollupicon {
   background-image: url("http://storage.googleapis.com/instapage-user-media/6b67dd96/8219698-0-Circled-Chevron-Up.png");
+  background-size: contain;}
+
+.linkicon.scrolldownicon {
+  background-image: url("../images/Circled-Chevron-Down.png");
   background-size: contain;}
 
 .linkicon.sociallink:hover {
@@ -2666,5 +2657,32 @@ select {
 .long-delay {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
+
+
+
+
+
+
+
+  @-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+  
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 3s;
+  }
+
+
 
 
